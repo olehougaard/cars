@@ -19,7 +19,7 @@ public class CarBaseTest {
 	@Before
 	public void setUp() throws RemoteException, NotBoundException {
 		Registry registry = LocateRegistry.getRegistry(1099);
-		carBase = (CarBase) registry.lookup("CarBase");
+		carBase = (RemoteCarBase) registry.lookup("CarBase");
 	}
 
 	@After
